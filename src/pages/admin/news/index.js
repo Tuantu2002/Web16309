@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 
 import { getAll, remove } from "../../../api/posts";
-import NavAdmin from "../../../components/admin/navadmin";
+import NavAdmin from "../../../components/admin/NavAdmin";
 
 /* eslint-disable linebreak-style */
 const NewsAdminList = {
@@ -63,7 +63,7 @@ const NewsAdminList = {
                 <tbody class="bg-white divide-y divide-gray-200">
                 ${data
                   .map(
-                    (post) => `
+                    (post) => /* html */ `
                 <tr>
                 <td class="px-4 py-4 whitespace-nowrap">
                     <div class="flex items-center">
@@ -120,13 +120,13 @@ const NewsAdminList = {
     // tao vong lap cho nodelist
     buttons.forEach((btn) => {
       // lay id tu thuoc tinh data-id cua button
-      const { id } = btn.dataset;
+      const { id } = btn.dataset.id;
       btn.addEventListener("click", () => {
-        const confirm = window.confirm("are you sure ?");
+        const confirm = window.confirm("ban co muon xoa khong ?");
         if (confirm) {
-          // goio ham delete trong folder api va ban id vao ham
+          // goi ham delete trong folder api va ban id vao ham
           remove(id).then(() => {
-            console.log("you deleted !");
+            console.log("ban da xoa thanh cong");
           });
         }
       });

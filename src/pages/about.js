@@ -1,9 +1,10 @@
-const Aboutpage = {
-  runder() {
-    return /* html */ `
-     <h1>Tuaasn Tus</h1>
-    
-    `;
-  },
+/* eslint-disable linebreak-style */
+const AboutPage = {
+    runder() {
+        return `
+        <h1></h1>
+        `;
+    },
 };
-export default Aboutpage;
+
+export default AboutPage;

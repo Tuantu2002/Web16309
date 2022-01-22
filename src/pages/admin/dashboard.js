@@ -1,8 +1,9 @@
-import NavAdmin from "../../../components/admin/navadmin";
+/* eslint-disable linebreak-style */
+import NavAdmin from "../../components/admin/NavAdmin";
 
 const DashboardAdmin = {
-  runder() {
-    return `
+    runder() {
+        return `
         <div> ${NavAdmin.runder()} </div>
 
         <main>
@@ -13,6 +14,6 @@ const DashboardAdmin = {
             </div>
       </main>
         `;
-  },
+    },
 };
 export default DashboardAdmin;

@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 const SignUp = {
-  runder() {
-    return /* html */ `
+    runder() {
+        return /* html */`
         
         <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full space-y-8">
@@ -79,7 +79,7 @@ const SignUp = {
   </div>
 </div>
         `;
-  },
+    },
 };
 
 export default SignUp;

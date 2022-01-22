@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 const Header = {
-  runder() {
-    return /* html */ `
+    runder() {
+        return /* html */ `
         <div class="bg-indigo-900 py-8 ">
 
         <a href="#">
@@ -36,6 +37,6 @@ const Header = {
 
 
         `;
-  },
+    },
 };
 export default Header;

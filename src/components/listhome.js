@@ -4,14 +4,12 @@ import { getAll } from "../api/posts";
 const NewList = {
     async runder() {
         const { data } = await getAll();
-        return /* html */ `
+        return /* html */`
         
                 <h2 class="my-8 font-bold uppercase text-cyan-900 text-2xl"> tin tức học tập </h2>
                 <div class="grid  grid-cols-3 gap-8"> 
         
-                ${data
-        .map(
-            (post) => `
+                ${data.map((post) => `
                 
                 <div class="content-list-item border border-bg-black">
                 <div class="p-6">
@@ -24,9 +22,7 @@ const NewList = {
                  <p class="font-normal">${post.desc}</p>
                 </div>
                </div>
-                `,
-        )
-        .join("")}
+                `).join("")}
                 </div>
                 
                 `;
